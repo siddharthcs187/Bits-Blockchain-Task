@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Item Details</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="left-section">
+                <button class="connect-button" onclick="connectClicked()">
+                    <i class="material-icons">account_balance_wallet</i> Connect
+                </button>
+            </div>
+            <div class="logo">
+                <h1>CryptoCart</h1>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="item-details-container">
+            <div class="item-image">
+                <img src="me.jpg" alt="Item Image" id="modalImage">
+            </div>
+            <div class="item-info">
+                <h2 id="modalTitle">Item Title</h2>
+                <p id="modalPrice"></p>
+                <p id="modalDescription"></p>
+                <button onclick="closeItemDetails()">Buy Now</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

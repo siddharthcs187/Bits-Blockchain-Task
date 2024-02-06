@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>E-commerce Website</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="left-section">
+                <button class="connect-button" onclick="connectClicked()">
+                    <i class="material-icons">account_balance_wallet</i> Connect
+                </button>
+            </div>
+            <div class="logo">
+                <h1>CryptoCart</h1>
+            </div>
+            <div class="searchBox">
+                <input class="searchInput" type="text" name="" placeholder="Search">
+                <button class="searchButton" href="#">
+                    <i class="material-icons">search</i>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    
+    <main id="itemContainer">
+        <!-- Loader -->
+        <div class="loader" id="loader"></div>
+
+        <!-- Product Cards will be added dynamically -->
+
+    </main>
+
+    <!-- Item Details Modal -->
+    <div id="itemDetailsModal" class="modal">
+        <span class="close" onclick="closeItemDetailsModal()">&times;</span>
+        <img id="modalImage" src="" alt="Item">
+        <h2 id="modalTitle">Item Title</h2>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
